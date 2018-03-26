@@ -10,7 +10,7 @@ class Artist
   end
 
   def self.all
-    save
+    Song.all
   end
 
   def save
