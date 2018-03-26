@@ -15,7 +15,7 @@ class Artist
   end
 
   def save
-    Song.all << self
+    Song.all << self if self.songs.length > 0
   end
 
   def songs
