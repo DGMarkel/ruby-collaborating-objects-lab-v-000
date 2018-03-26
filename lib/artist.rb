@@ -16,7 +16,6 @@ class Artist
 
   def save
     Song.all << self
-    binding.pry
   end
 
   def songs
