@@ -15,7 +15,7 @@ class Artist
   end
 
   def save
-    Song.all << self 
+    Song.all << self
   end
 
   def songs
@@ -40,5 +40,5 @@ class Artist
   def print_songs
     @songs.each {|song| puts song.name}
   end
-
+  binding.pry
 end
