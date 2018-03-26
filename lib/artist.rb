@@ -35,6 +35,7 @@ class Artist
       new_artist.save
       new_artist
     end
+    binding.pry
   end
 
   def print_songs
