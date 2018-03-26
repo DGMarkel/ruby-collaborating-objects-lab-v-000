@@ -34,7 +34,6 @@ class Artist
       new_artist = Artist.new(name)
       new_artist.save
       new_artist
-      binding.pry
     end
   end
 
