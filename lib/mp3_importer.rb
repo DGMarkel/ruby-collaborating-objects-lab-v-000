@@ -13,8 +13,6 @@ class MP3Importer
     self.files.collect do |file|
       Song.new_by_filename(file)
     end
-    Song.all
-    binding.pry
   end
 
 
