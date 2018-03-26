@@ -12,11 +12,11 @@ class Artist
 
   def self.all
     Song.all
-    binding.pry
   end
 
   def save
     Song.all << self
+    binding.pry
   end
 
   def songs
