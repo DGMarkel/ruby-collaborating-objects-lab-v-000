@@ -15,7 +15,6 @@ class Song
     artist_instance.songs << song_instance
     song_instance.artist = artist_instance
     song_instance
-    binding.pry
   end
 
   def self.all
