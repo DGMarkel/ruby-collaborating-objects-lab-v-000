@@ -12,9 +12,10 @@ class Song
     name = file_name.split(" - ")
     artist_instance = Artist.find_or_create_by_name(name[0])
     song_instance = self.new(name[1])
-    artist_instance.songs << song_instance 
+    artist_instance.songs << song_instance
     song_instance.artist = artist_instance
     song_instance
+    binding.pry
   end
 
   def self.all
