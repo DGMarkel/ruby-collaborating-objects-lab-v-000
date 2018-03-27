@@ -7,7 +7,6 @@ class MP3Importer
 
   def files
     files = Dir["#{@path}/*"].map {|file_name| file_name.gsub("#{path}/", "")}
-    binding.pry
   end
 
   def import
