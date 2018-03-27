@@ -30,7 +30,7 @@ class Artist
   def self.find_or_create_by_name(name)
     if new_artist = Song.all.find{|artist| artist.name == name}
       new_artist
-    else
+    elsif new_artist != "Drake" && new_artist != "Michael Jackson"
       new_artist = Artist.new(name)
       new_artist.save
       new_artist
